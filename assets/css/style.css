@@ -1,0 +1,296 @@
+/*
+Orange color: #e67e22
+
+---Typography---
+Recommended font-size for headers: 2.4em / 240% / 90px (or between 60px-90px)
+Recommended font-size for regular text: 22px (or between 15px - 25px)
+Recommended line-spacing: 150% (or between 120% - 150%)
+Recommended characters per line: 45-90 characters
+*/
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 150%;
+  }
+  
+  html,
+  body {
+    background-color: #fff;
+    color: rgb(75, 75, 75);
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  
+  .clearfix {
+    zoom: 1;
+  }
+  .clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  /* ----------------------------------------------- */
+  /* HEADER */
+  /* ----------------------------------------------- */
+  
+  header {
+    background-image: -webkit-linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(../img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    background-attachment: fixed;
+  }
+  
+  .main-nav {
+    text-transform: uppercase;
+    float: right;
+  }
+  ul li {
+    display: inline;
+  }
+  
+  .main-nav li a:link {
+    font-size: medium;
+    color: #fff;
+    padding: 6px;
+    text-decoration: none;
+  }
+  
+  .hero-text-box {
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    color: white;
+  }
+  .row {
+    padding-top: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: Montserrat;
+    text-align: center;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  /* ----------------------------------------------- */
+  /* BODY */
+  /* ----------------------------------------------- */
+  .row h2 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid green;
+  }
+  
+  .logo {
+    width: 80px;
+    float: left;
+  }
+  
+  .icon-big {
+    color: green;
+    font-size: 100px;
+  }
+  
+  .btn-full {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    background: orange;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: 0.5em 2em 0.55em;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 1em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  .btn-full:hover {
+    background: #f47c20;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#f88e11),
+      to(#f06015)
+    );
+    background: -moz-linear-gradient(top, #f88e11, #f06015);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+  }
+  
+  .btn-ghost {
+    margin-top: 20px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: solid 3px #da7c0c;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    color: orange;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: 0.5em 2em 0.55em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 1.2em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  .meals-showcase {
+    list-style: none;
+    width: 100%;
+  }
+  .meals-showcase li {
+    display: block;
+    float: left;
+    width: 24%;
+  }
+  
+  .meal-photo img {
+    width: 30rem;
+  }
+  .col img {
+    width: 17rem;
+    float: center;
+    margin: 10px;
+  }
+  
+  .city-feature {
+    font-size: 0.8rem;
+    margin-left: 25%;
+    text-align: left;
+    padding: 0;
+  }
+  
+  .icon-small {
+    color: olivedrab;
+  }
+  
+  .works-step div {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: solid 4px olivedrab;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    color: olive;
+    font: 35px/100% Helvetica, sans-serif;
+    padding: 14px 20px 14px 20px;
+    margin: 35px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 50%;
+  }
+  
+  .btn-app img {
+    margin: 30px;
+    width: 150px;
+  }
+  
+  blockquote {
+    font-size: 0.7rem;
+    padding: 1.5rem;
+  }
+  .section-testimonials img {
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  
+  .section-plans ul li {
+    display: block;
+    margin-top: 10px;
+    padding-left: 60px;
+    font-size: 14px;
+    margin-left: 25%;
+    text-align: left;
+  }
+  
+  .ion-ios-checkmark-empty {
+    color: green;
+    margin: 15px;
+    width: 200px;
+    font-size: 40px;
+  }
+  
+  input {
+    float: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+  }
+  
+  .footer-nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+  }
+  
+  .ion-social-facebook {
+    color: white;
+    margin: 25px;
+    font-size: 40px;
+  }
+  .ion-social-twitter {
+    color: white;
+    margin: 25px;
+    font-size: 40px;
+  }
+  .ion-social-googleplus {
+    color: white;
+    margin: 25px;
+    font-size: 40px;
+  }
+  .ion-social-instagram {
+    color: white;
+    margin: 25px;
+    font-size: 40px;
+  }
+  
+  footer {
+    background-color: rgb(51, 51, 51);
+    margin-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+    margin-bottom: 0;
+  }
+  
